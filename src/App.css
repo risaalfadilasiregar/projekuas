@@ -1,0 +1,151 @@
+*, p {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  min-height: 100vh;
+  padding: 5% 0;
+  overflow-x: scroll;
+}
+:root {
+  --blue: #00ccff;
+  --white: #ffffff;
+  --lightDark: #e3edef;
+  --black: #000000;
+  --small: .6rem;
+  --medium: .8rem;
+  --large: 1rem;
+}
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+#home .nav-link {
+  text-decoration: none;
+  padding: 2% 5%;
+  color: var(--blue);
+  border: solid .1px var(--blue);
+  text-transform: uppercase;
+}
+
+#home .nav-link:hover {
+  color: var(--white);
+  border: solid 1px var(--white);
+  background-color: var(--blue);
+  box-shadow: 2px 2px var(--white);
+}
+
+#tab .tabs {
+  width: 30%;
+  text-decoration: none;
+  padding: 2%;
+  font-size: var(--medium);
+}
+
+#tab .tabs.active {
+  border-bottom: solid 5px var(--blue);
+}
+
+#quran header {
+  width: 100%;
+  color: var(--small);
+}
+
+#quran .icon-number {
+  border: solid .1px var(--blue);
+  color: var(--blue);
+  font-size: var(--small);
+  width: 40px;
+  height: 40px;
+}
+.navigation {
+  height: 15vh;
+  margin-top: 2%;
+  max-height: 15vh;
+}
+.pages {
+  margin-top: 15vh;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+#quran section {
+  width: 100vw;
+}
+#quran section .detail .title {
+  color: var(--blue);
+  font-size: var(--medium);
+}
+#quran section .detail .subtitle {
+  font-size: var(--small);
+  color: #000;
+}
+#quran .detail {
+  width: 80%;
+}
+#quran .ayah-container {
+  width: 100%;
+}
+#quran .ayah {
+  width: 80%;
+}
+
+#quran .dl-btn {
+  width: 20%;
+  border: solid .1px var(--blue);
+  color: var(--blue);
+  transition: .4s all;
+}
+#quran .dl-btn:hover {
+  width: 20%;
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+}
+#quran .list-link {
+  text-decoration: none;
+  transition: 1s;
+}
+#quran .list-link:hover {
+  border-left: solid 5px var(--blue);
+  background-color: var(--lightDark);
+  padding: 0 5%;
+}
+
+#quran .marked {
+  color: var(--blue);
+}
+
+#quran .un-marked {
+  color: var(--lightDark);
+}
+
+.bookmark-empty {
+  min-height: 30vh;
+}
+.bookmark-empty p {
+  color: var(--blue);
+}
+
+
+/* mobile */
+@media (max-width: 575.98px) {
+  #quran .ayah .arabic {
+    font-size: var(--medium);
+  }
+  #quran .ayah .translate {
+    font-size: var(--small);
+  }
+}
+@media (min-width: 576px) {
+  #quran .ayah .arabic {
+    font-size: var(--large);
+  }
+  #quran .ayah .translate {
+    font-size: var(--medium);
+  }
+}
